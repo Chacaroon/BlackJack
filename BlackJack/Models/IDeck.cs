@@ -6,11 +6,8 @@ using System.Threading.Tasks;
 
 namespace BlackJack
 {
-	class Program
+	interface IDeck
 	{
-		static void Main(string[] args)
-		{
-			StartPoint.Start(); // Start game
-		}
+		Card DistributeCard();
 	}
 }

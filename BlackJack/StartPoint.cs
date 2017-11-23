@@ -8,13 +8,14 @@ namespace BlackJack
 		{
 			if (GameConsole.IsStartGame())
 			{
-				Console.WriteLine("Start game");
-				GameCopy game = new GameCopy(); // Создание сессии игры
-				game.FirstStep(); // Запуск игры
-				Start(); // Когда игрок закончит игру ему отобразится предложение начать заново
+				Table game = new Table(); // Creating a Game Instance
+				game.Start(); // Started game
+				Start(); // When the player finishes the game, he will be prompted to start again
 			}
 			else
+			{
 				Exit();
+			}
 		}
 
 		public static void Exit()

@@ -2,7 +2,7 @@
 
 namespace BlackJack
 {
-	class Card
+	class Card : ICard
 	{
 		private string name;
 		private int points;
@@ -27,6 +27,11 @@ namespace BlackJack
 		{
 			this.name = name;
 			this.points = points;
+		}
+
+		public static explicit operator string(Card card)
+		{
+			return card.name;
 		}
 	}
 }

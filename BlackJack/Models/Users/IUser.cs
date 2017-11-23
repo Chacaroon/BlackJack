@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BlackJack
 {
-	class Program
+	interface IUser
 	{
-		static void Main(string[] args)
-		{
-			StartPoint.Start(); // Start game
-		}
+		string Name { get; }
+		void Step();
+		LinkedList<Card> Cards { get; }
+		void AddCardToUserDeck(Card card);
 	}
 }

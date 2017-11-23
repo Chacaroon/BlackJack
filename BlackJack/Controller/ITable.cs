@@ -4,13 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlackJack
+namespace BlackJack.Controller
 {
-	class Program
+	interface ITable
 	{
-		static void Main(string[] args)
-		{
-			StartPoint.Start(); // Start game
-		}
+		void Start();
 	}
 }
